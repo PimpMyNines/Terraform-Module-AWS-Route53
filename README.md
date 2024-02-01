@@ -85,7 +85,7 @@ module "records" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 5.34 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.34.0 |
 | <a name="provider_time"></a> [time](#provider\_time) | 0.10.0 |
 
 ## Modules
