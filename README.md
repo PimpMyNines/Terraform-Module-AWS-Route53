@@ -92,7 +92,7 @@ module "records" {
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_label"></a> [label](#module\_label) | cloudposse/label/null | 0.25.0 |
+| <a name="module_label"></a> [label](#module\_label) | git@github.com:PimpMyNines/Terraform-Module-Standard-Labels-Tags.git | main |
 
 ## Resources
 
