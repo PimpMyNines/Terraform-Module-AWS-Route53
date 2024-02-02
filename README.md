@@ -78,8 +78,8 @@ module "records" {
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.7 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.34 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | 3.6.0 |
-| <a name="requirement_time"></a> [time](#requirement\_time) | 0.10.0 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.6.0 |
+| <a name="requirement_time"></a> [time](#requirement\_time) | >= 0.10.0 |
 
 ## Providers
 
@@ -98,7 +98,7 @@ module "records" {
 
 | Name | Type |
 |------|------|
-| [time_static.creation](https://registry.terraform.io/providers/hashicorp/time/0.10.0/docs/resources/static) | resource |
+| [time_static.creation](https://registry.terraform.io/providers/hashicorp/time/latest/docs/resources/static) | resource |
 | [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
 | [aws_partition.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/partition) | data source |
 | [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) | data source |
