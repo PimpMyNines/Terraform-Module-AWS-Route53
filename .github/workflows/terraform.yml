@@ -2,9 +2,13 @@ name: "Terraform"
 
 on:
   push:
+  pull_request:
     branches:
       - main
-  pull_request:
+
+env:
+  AWS_ROLE: arn:aws:iam::637423450830:role/GitHubReadOnly
+  AWS_REGION: us-east-1
 
 jobs:
   terraform:
@@ -20,6 +24,12 @@ jobs:
         uses: hashicorp/setup-terraform@v3
         with:
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ env.AWS_ROLE }}
+          aws-region: ${{ env.AWS_REGION }}
 
       - name: Terraform Format
         id: fmt
